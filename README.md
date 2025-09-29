@@ -2,6 +2,9 @@
 
 Uma rede social moderna onde usuários podem compartilhar mensagens e interagir através de curtidas.
 
+# Apresentação: 
+https://youtu.be/CKgThYCcoto 
+
 ## Funcionalidades
 
 - **Autenticação de Usuários**: Sistema completo de registro e login
