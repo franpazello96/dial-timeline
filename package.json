@@ -1,0 +1,24 @@
+{
+  "name": "time-link",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:franpazello96/time-link.git",
+  "license": "MIT",
+  "scripts": {
+    "frontend": "npm run dev --prefix frontend",
+    "backend": "npm run dev --prefix backend",
+    "test": "npm test --prefix backend",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "install:frontend": "cd frontend && npm install --verbose",
+    "install:backend": "cd backend && npm install --verbose",
+    "install:all": "npm install && npm run install:frontend && npm run install:backend",
+    "build": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
